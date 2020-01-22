@@ -84,3 +84,10 @@ PRODUCT_PACKAGES += \
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
+# OpenGapps
+GAPPS_VARIANT := nano 
+GAPPS_PRODUCT_PACKAGES += Chrome
+GAPPS_FORCE_PIXEL_LAUNCHER := true
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
