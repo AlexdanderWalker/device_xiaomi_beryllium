@@ -86,8 +86,14 @@ PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
 # OpenGapps
-GAPPS_VARIANT := nano 
-GAPPS_PRODUCT_PACKAGES += Chrome
-GAPPS_FORCE_PIXEL_LAUNCHER := true
+GAPPS_VARIANT := pico
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_PRODUCT_PACKAGES += CalendarGooglePrebuilt
+GAPPS_PRODUCT_PACKAGES += LatinImeGoogle
+GAPPS_PRODUCT_PACKAGES += Maps
+GAPPS_PRODUCT_PACKAGES += PrebuiltGmail
+GAPPS_PRODUCT_PACKAGES += YouTube
+GAPPS_EXCLUDED_PACKAGES := GoogleTTS
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
