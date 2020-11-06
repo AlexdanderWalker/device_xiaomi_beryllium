@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018-2020 The LineageOS Project
-#
+# Copyrught (C) 2020 The CygnusOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
